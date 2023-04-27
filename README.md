@@ -1,3 +1,3 @@
 # PetShopEcllipse
 
-# Dev branch
+# feature-entity branch
