@@ -5,7 +5,7 @@ import java.util.Objects;
 import jakarta.persistence.*;
 
 @Entity
-public class petEntity {
+public class PetEntity {
 	//Auto generates ID and puts it into ID column
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,10 +25,10 @@ public class petEntity {
 	private String type;
 
 	// Default Constructor
-	public petEntity() {}
+	public PetEntity() {}
 	
 	// Constructor with no ID
-	public petEntity(String name, String breed, String colour, String type) {
+	public PetEntity(String name, String breed, String colour, String type) {
 		this.name = name;
 		this.breed = breed;
 		this.colour = colour;
@@ -36,7 +36,7 @@ public class petEntity {
 	}
 	
 	// Constructor with ID
-	public petEntity(long id, String name, String breed, String colour, String type) {
+	public PetEntity(long id, String name, String breed, String colour, String type) {
 		this.id = id;
 		this.name = name;
 		this.breed = breed;
@@ -111,7 +111,7 @@ public class petEntity {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		petEntity other = (petEntity) obj;
+		PetEntity other = (PetEntity) obj;
 		return Objects.equals(breed, other.breed) && Objects.equals(colour, other.colour) && id == other.id
 				&& Objects.equals(name, other.name) && Objects.equals(type, other.type);
 	}
