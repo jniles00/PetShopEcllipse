@@ -95,7 +95,7 @@ public class petEntity {
 				+ "Name: " + name + "\n"
 				+ "Breed: " + breed + "\n"
 				+ "Colour: " + colour + "\n"
-				+ "Type=" + type;
+				+ "Type: " + type;
 	}
 
 	@Override
